@@ -3,38 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio - Markus Sieber</title>
     <style>
-        body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #1a1a1a; color: white; line-height: 1.6; }
-        header { height: 40vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(45deg, #2c3e50, #000); }
-        .container { max-width: 800px; margin: -50px auto 50px; background: #222; padding: 40px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-        h2 { border-bottom: 2px solid #007bff; padding-bottom: 10px; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
-        .box { background: #333; padding: 15px; border-radius: 5px; border-left: 4px solid #007bff; }
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #1a1a1a; color: white; line-height: 1.6; overflow-x: hidden; }
+        header { height: 30vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(45deg, #2c3e50, #000); text-align: center; padding: 20px; }
+        .container { max-width: 90%; width: 800px; margin: -30px auto 50px; background: #222; padding: 25px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); box-sizing: border-box; }
+        h2 { border-bottom: 2px solid #007bff; padding-bottom: 10px; font-size: 1.5rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px; }
+        .box { background: #333; padding: 20px; border-radius: 8px; border-left: 4px solid #007bff; transition: transform 0.2s; }
+        .box:hover { transform: translateY(-5px); }
+        .contact-info { word-wrap: break-word; }
     </style>
 </head>
 <body>
     <header>
         <h1>Markus Sieber</h1>
-        <p>Infos</p>
+        <p>Professionelle Dienstleistungen</p>
     </header>
     <div class="container">
-        <section>
-            <h2>Privat Daten</h2>
-            <p>markus.sieber31@gmx.de<br>
-            +49 (0) 15206821179<br>
-            Deutschland/ Steingaden</p>
+        <section class="contact-info">
+            <h2>Private Daten</h2>
+            <p>📧 markus.sieber31@gmx.de<br>
+            📞 +49 (0) 15206821179<br>
+            📍 Deutschland / Steingaden</p>
         </section>
         <section>
             <h2>Partnerschaften</h2>
             <div class="grid">
-                <div class="box"><h3>IT Solutions & Fix</h3><p>IT Dienstleistung
-                    <br><br>itsolutionsandfix@gmail.com</p></div>
-                <div class="box"><h3>Tbrasstracks</h3><p>Kreative Trompeten Sound Aufnahmen
-                    <br><br>tbrasstrackstrumpet@gmail.com</p></div>
+                <div class="box">
+                    <h3>IT Solutions & Fix</h3>
+                    <p>IT Dienstleistung<br><br>itsolutionsandfix@gmail.com</p>
+                </div>
+                <div class="box">
+                    <h3>Tbrasstracks</h3>
+                    <p>Kreative Trompeten Sound Aufnahmen<br><br>tbrasstrackstrumpet@gmail.com</p>
+                </div>
             </div>
         </section>
     </div>
 </body>
 </html>
-
